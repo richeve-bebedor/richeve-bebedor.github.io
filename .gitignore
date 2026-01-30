@@ -55,6 +55,9 @@
 !.vscode/**/*.json
 
 !assets/
+!assets/images/
+!assets/scripts/
+!assets/styles/
 !assets/**/*.css
 !assets/**/*.js
 !assets/**/*.mjs
