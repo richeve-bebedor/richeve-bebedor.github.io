@@ -21,23 +21,25 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npx --yes husky"
+    "prepare": "husky || true"
   },
   "engines": {
-    "node": "24.13.0",
-    "npm": "11.6.2"
+    "node": "24.13.1",
+    "npm": "11.10.0"
   },
   "volta": {
-    "node": "24.13.0",
-    "npm": "11.6.2"
+    "node": "24.13.1",
+    "npm": "11.10.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.3.1",
-    "@commitlint/config-conventional": "20.3.1",
+    "@commitlint/cli": "20.4.1",
+    "@commitlint/config-conventional": "20.4.1",
+    "husky": "9.1.7",
     "lint-staged": "16.2.7"
   },
   "dependencies": {
     "@picocss/pico": "2.1.1",
+    "feather-icons": "4.29.2",
     "htmx.org": "2.0.8"
   }
 }
