@@ -19,6 +19,7 @@
     "editor.wordWrap": "off",
     "files.associations": {
         "*.help": "text",
+        "*.setting": "toml",
         "*.template": "text",
         "*.todo": "text",
         "*[ BEGIN-CRFCF ]*": "text",
@@ -26,6 +27,7 @@
         "5LAWS": "text",
         "AUTHOR": "text",
         "CHANGELOG": "text",
+        "CHECKSUM": "text",
         "CONTRIBUTING": "text",
         "CONTRIBUTORS": "text",
         "EMAIL": "text",
@@ -35,11 +37,13 @@
         "LICENSE": "text",
         "METADATA": "text",
         "ORIGIN": "text",
+        "PACKAGES": "text",
         "PRIVACY": "text",
         "README": "text",
         "REFERENCES": "text",
         "RULES": "text",
         "SECURITY": "text",
+        "SETUP": "text",
         "VERSION": "text",
         "WEBSITE": "text",
     },
@@ -49,15 +53,21 @@
     "files.readonlyInclude": {
         "**/5LAWS": true,
         "**/AUTHOR": true,
+        "**/CHECKSUM": true,
         "**/EMAIL": true,
-        //"**/INDEX": true,
-        //"**/ORIGIN": true,
+        "**/INDEX": true,
+        "**/ORIGIN": true,
         "**/RULES": true,
         "**/VERSION": true,
-        //"**/WEBSITE": true
+        "**/WEBSITE": true
     },
     "files.trimTrailingWhitespace": true,
     "prettier.enable": false,
+    "terminal.integrated.env.windows": {
+        "NPM_CONFIG_CACHE": "${workspaceFolder}/.npm",
+        "NPM_CONFIG_PROGRESS": "false",
+        "CI": "true"
+    },
     "terminal.integrated.profiles.windows": {
         "Elevated PowerShell": {
             "path": "gsudo.exe",
@@ -69,5 +79,8 @@
     "workbench.editor.centeredLayoutAutoResize": false,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
     }
 }
