@@ -83,8 +83,28 @@ function Test-CommitFileCount {
         Write-DebugLog -Scope "HOOK-PREPUSH" `
             -Message "Checking atomic commit requirements"
 
-        $commitList = @(& git rev-list '@{upstream}..HEAD' 2>&1 | `
-            Where-Object { $_ -and $_ -notmatch '^\s*$' })
+        # Check if upstream is configured
+        $null = & git rev-parse --abbrev-ref '@{upstream}' 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-ErrorLog -Scope "HOOK-PREPUSH" `
+                -Message "No upstream configured for current branch" +
+                "Use 'git push --set-upstream origin <branch>' first."
+
+            throw "Upstream branch not configured"
+        }
+
+        $commitList = @(& git rev-list '@{upstream}..HEAD' 2>&1)
+        if ($LASTEXITCODE -ne 0) {
+            Write-ErrorLog -Scope "HOOK-PREPUSH" `
+                -Message "Failed to get commit list: $($commitList -join ' ')"
+
+            throw "Git rev-list command failed"
+        }
+
+        # Filter out empty lines and ensure we have strings
+        $commitList = @($commitList | Where-Object {
+            $_ -and $_ -is [string] -and $_ -notmatch '^\s*$'
+        })
 
         $commitCount = $commitList.Count
 
@@ -103,6 +123,19 @@ function Test-CommitFileCount {
         for ($commitIndex = 0; $commitIndex -lt $commitList.Count; `
             $commitIndex++) {
             $currentCommitHash = $commitList[$commitIndex]
+
+            # Ensure we have a valid commit hash string
+            if (-not $currentCommitHash -or $currentCommitHash -isnot [string] `
+                -or $currentCommitHash.Length -lt 7) {
+
+                $failedMessage = "Invalid commit hash at index " +
+                    "${commitIndex}: $currentCommitHash"
+
+                Write-ErrorLog -Scope "HOOK-PREPUSH" -Message $failedMessage
+
+                continue
+            }
+
             $commitShortHash = $currentCommitHash.Substring(0, 7)
 
             $changedFileList = @(& git diff-tree --no-commit-id `
