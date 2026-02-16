@@ -1,0 +1,43 @@
+:root,
+:host {
+    --concise-grid-unit: 47px;
+
+    --concise-icon-size: 23px;
+    --concise-logo-icon-size: 37px;
+
+    --concise-text-small: 13px;
+    --concise-text-body: 17px;
+    --concise-text-lead: 19px;
+    --concise-text-h6: 19px;
+    --concise-text-h5: 23px;
+    --concise-text-h4: 29px;
+    --concise-text-h3: 31px;
+    --concise-text-h2: 37px;
+    --concise-text-h1: 43px;
+
+    --concise-list-item-unit: 7;
+    --concise-list-item-content-unit: 5;
+
+    --concise-list-item-width: calc(
+        var(--concise-grid-unit) * var(--concise-list-item-unit)
+    );
+    --concise-list-item-height: var(--concise-grid-unit);
+    --concise-list-item-content-width: calc(
+        var(--concise-grid-unit) * var(--concise-list-item-content-unit)
+    );
+    --concise-list-width: calc(
+        var(--concise-grid-unit) * var(--concise-list-item-unit)
+    );
+
+    --expanded-sidebar-width: var(--concise-list-item-width);
+    --collapsed-sidebar-width: var(--concise-grid-unit);
+}
+
+main.concise-component * {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+}
