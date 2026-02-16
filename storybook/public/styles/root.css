@@ -1,0 +1,14 @@
+:root {
+    --concise-grid-unit: 47px;
+    --concise-grid-spacing: 5px;
+    --concise-border-radius: 3px;
+    --concise-icon-size: 23px;
+
+    --concise-list-item-width: calc(var(--concise-grid-unit) * 7);
+    --concise-list-item-height: var(--concise-grid-unit);
+    --concise-list-item-label-width: calc(var(--concise-grid-unit) * 5);
+    --concise-list-width: calc(var(--concise-grid-unit) * 7);
+
+    --expanded-sidebar-width: var(--concise-list-item-width);
+    --collapsed-sidebar-width: var(--concise-grid-unit);
+}
