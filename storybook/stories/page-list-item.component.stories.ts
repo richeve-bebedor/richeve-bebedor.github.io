@@ -10,7 +10,7 @@ export const PageListItem: Story = {
     <section class="left-sidebar sidebar">
         <aside>
             <nav>
-                <ul class="page-list"
+                <ul class="page-list list"
                     hx-get="/partials/page-list-item.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
@@ -27,7 +27,7 @@ export const PageListItemWithControl: Story = {
     <section class="left-sidebar sidebar">
         <aside>
             <nav>
-                <ul class="page-list"
+                <ul class="page-list list"
                     hx-get="/partials/page-list-item-with-control.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
@@ -44,7 +44,7 @@ export const PageListItemWithIcon: Story = {
     <section class="left-sidebar sidebar">
         <aside>
             <nav>
-                <ul class="page-list"
+                <ul class="page-list list"
                     hx-get="/partials/page-list-item-with-icon.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
@@ -61,7 +61,7 @@ export const CompletePageListItem: Story = {
     <section class="left-sidebar sidebar">
         <aside>
             <nav>
-                <ul class="page-list"
+                <ul class="page-list list"
                     hx-get="/partials/complete-page-list-item.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
