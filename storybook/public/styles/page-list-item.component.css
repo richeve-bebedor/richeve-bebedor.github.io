@@ -1,0 +1,53 @@
+main.concise-component section.left-sidebar.sidebar >
+aside > nav > ul.page-list > li.page-list-item {
+    padding: 0;
+    margin: 0;
+
+    height: var(--concise-list-item-height);
+    width: var(--concise-list-item-width);
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: row;
+}
+
+main.concise-component section.left-sidebar.sidebar >
+aside > nav > ul.page-list > li.page-list-item > a.page-link {
+    padding: var(--concise-grid-spacing);
+    margin: 0;
+
+    height: var(--concise-list-item-height);
+    width: var(--concise-list-item-label-width);
+
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+main.concise-component section.left-sidebar.sidebar >
+aside > nav > ul.page-list > li.page-list-item:has(> a.page-link:only-child) {
+    justify-content: center;
+}
+
+main.concise-component section.left-sidebar.sidebar >
+aside > nav > ul.page-list > li.page-list-item:has(> button.control) {
+    justify-content: flex-end;
+}
+
+main.concise-component section.left-sidebar.sidebar >
+aside > nav > ul.page-list > li.page-list-item:has(> span.icon) {
+    justify-content: flex-start;
+}
+
+/**
+ * Remove default PicoCSS button styles for control buttons
+ */
+main.concise-component section.left-sidebar.sidebar >
+aside > nav > ul.page-list > li.page-list-item > button.control {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
