@@ -1,4 +1,4 @@
-main.concise-component svg.icon {
+main.concise-component svg.icon:not(.logo) {
     width: var(--concise-icon-size);
     height: var(--concise-icon-size);
     stroke: currentColor;
@@ -6,6 +6,11 @@ main.concise-component svg.icon {
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
+}
+
+main.concise-component svg.logo.icon {
+    width: var(--concise-logo-icon-size);
+    height: var(--concise-logo-icon-size);
 }
 
 main.concise-component span.icon:has(> svg.icon) {
@@ -17,7 +22,7 @@ main.concise-component span.icon:has(> svg.icon) {
     justify-content: center;
 }
 
-main.concise-component span.logo.icon:has(> svg.icon) {
+main.concise-component span.logo.icon:has(> svg.logo.icon) {
     width: var(--concise-grid-unit);
     height: var(--concise-grid-unit);
 
