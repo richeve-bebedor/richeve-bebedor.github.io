@@ -1,9 +1,0 @@
-main.concise-component section.left-sidebar.sidebar > aside:has(> nav > ul.page-list.list),
-main.concise-component section.left-sidebar.sidebar > aside > nav:has(> ul.page-list.list),
-main.concise-component section.left-sidebar.sidebar > aside > nav > ul.page-list.list {
-    width: var(--concise-list-width);
-    height: auto;
-
-    margin: 0;
-    padding: 0;
-}
