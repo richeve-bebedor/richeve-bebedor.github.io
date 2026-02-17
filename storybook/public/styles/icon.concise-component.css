@@ -1,4 +1,4 @@
-body.concise-component svg.icon:not(.logo) {
+.concise-component svg.icon:not(.logo) {
     width: var(--concise-icon-size);
     height: var(--concise-icon-size);
 
@@ -10,12 +10,12 @@ body.concise-component svg.icon:not(.logo) {
     fill: none;
 }
 
-body.concise-component svg.logo.icon {
+.concise-component svg.logo.icon {
     width: var(--concise-logo-icon-size);
     height: var(--concise-logo-icon-size);
 }
 
-body.concise-component span.icon:has(> svg.icon:only-child) {
+.concise-component span.icon:has(> svg.icon:only-child) {
     width: var(--concise-base-unit);
     height: var(--concise-base-unit);
 
