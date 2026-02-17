@@ -1,56 +1,69 @@
 AI COLOR VALIDATION PROTOCOL
 
-VALIDATION MODE — DO NOT REDESIGN
-
 PHASE 0 — CONTEXT & AUTHORITY
 
     - Authority:
 
-        - Validate a UI against a strict dark-first “Hybrid Controlled Intelligence”
+        - Read and comply with ./5LAWS.
+        - Read and comply with ./RULES.
+        - Read and comply with ./FORMAT.
+        - Read and understand ./helps/color-design-rule-prompt-flow.help
+          for guidance only.
+        - Validate UI against dark-first "Hybrid Controlled Intelligence"
           color governance system.
-        - You MUST NOT redesign or suggest improvements unless violations are detected.
-        - You MUST return results in the structured format only (see OUTPUT FORMAT).
 
     - Rule Precedence:
 
+        - Rules apply in the order listed above.
         - Validation rules below are authoritative for this protocol.
         - Output structure rules under OUTPUT FORMAT override general formatting.
         - If any rule is ambiguous, conflicting, or incomplete:
-            - First consult any available internal flow help for guidance only.
+
+            - First consult ./helps/color-design-rule-prompt-flow.help
+              to resolve procedural ambiguity.
             - Do NOT infer intent or make assumptions.
-            - If ambiguity remains, stop and request clarification from the author.
+            - If ambiguity remains after consulting the flow help file,
+              stop and request clarification from the author.
 
     - Output Structure Binding:
 
         - The OUTPUT FORMAT defined in this file is the ONLY permitted structure.
-        - You MUST use the format verbatim when creating validation outputs.
-        - You MUST NOT invent, omit, reorder, or rename fields.
+        - The agent MUST use the format verbatim when creating validation outputs.
+        - The agent MUST NOT invent, omit, reorder, or rename fields.
 
     - Flow Help Scope:
 
-        - Any flow help defines internal decision logic only.
-        - It MUST NOT override this protocol, validation rules, or the output structure.
+        - ./helps/color-design-rule-prompt-flow.help defines
+          internal decision logic only.
+        - It MUST NOT override this protocol, RULES,
+          FORMAT, or the output structure.
 
     - Interaction Constraint:
 
         - Execution is non-interactive by default.
-        - Do NOT ask questions unless blocked by unresolved ambiguity in the input.
+        - The agent MUST NOT ask questions about execution,
+          validation content, or next steps unless explicitly
+          blocked by unresolved ambiguity.
 
     - Execution Boundary:
 
         - No redesign suggestions or stylistic recommendations are permitted
-          unless FAIL is present in the validation results.
+          before PHASE 4.
+        - Redesign suggestions are permitted only when FAIL is present
+          in validation results.
 
 PHASE 1 — INGESTION
 
     - Ingestion Artifact: UI Viewport & Section Map
 
         - Input types supported:
+
             1. Image (single screenshot per viewport, including overlays/modals)
             2. Figma export (frames/artboards with layer geometry)
             3. Code (DOM/CSS tokens and computed styles)
 
         - Enumerate visible viewports and, for each viewport, list sections:
+
             - Viewport: a single visible screen state without scrolling
               (including modals/overlays).
             - Section: a visually bounded content group separated by spacing,
@@ -80,13 +93,15 @@ PHASE 3 — ANALYSIS
     - Measurement Guidance:
 
         - Surface area:
+
             - Image: approximate via segmentation/masking or pixel-count by
               luminance and hue classification.
-            - Figma: compute area from layer frames/bounds; exclude fully transparent
-              or non-visible layers.
+            - Figma: compute area from layer frames/bounds; exclude fully
+              transparent or non-visible layers.
             - Code: derive from rendered box areas and computed background colors.
 
         - Classification:
+
             - Black variants: dark neutral family designated by the system.
             - White variants: light neutral family designated by the system.
             - Accent family: one semantic color group (orange, blue, green,
@@ -95,47 +110,56 @@ PHASE 3 — ANALYSIS
               all accent families.
 
         - Evidence:
+
             - Report quantitative estimates (percentages, counts, sizes),
               citing viewport-level and section-level measures where applicable.
 
-    - VALIDATION CHECKLIST (17 Rules):
+    - Validation Checklist (17 Rules):
 
-        SURFACE DOMINANCE
-        1. Black variants occupy ≥ 70% of visible surface area per viewport.
-        2. White variants occupy ≤ 30% of visible surface area.
-        3. At least 50% of the viewport contains no accent color (by visible surface area).
+        - Surface Dominance:
 
-        ACCENT DISCIPLINE
-        4. No more than two accent families are present per viewport.
-        5. Only one lighter accent variant is used across all accent families.
-        6. Accent colors are not used decoratively or as large background fills.
-        7. Accent colors appear only when fulfilling their semantic roles.
-        8. Orange appears only as primary action.
-        9. Only one primary orange CTA exists per section.
+            1. Black variants occupy ≥ 70% of visible surface area per viewport.
+            2. White variants occupy ≤ 30% of visible surface area.
+            3. At least 50% of viewport contains no accent color (by surface area).
 
-        SEMANTIC INTEGRITY
-        10. Color meanings are not repurposed:
-            - Orange → primary action
-            - Blue → system/data
-            - Green → confirmation
-            - Yellow → warning
-            - Violet → AI/premium
-            - Red → critical/destructive
-        11. No more than two semantic states appear within a single section.
+        - Accent Discipline:
 
-        HIERARCHY CONTROL
-        12. Each section contains only one dominant focal element.
-        13. Dominance is established through size, placement, or contrast —
-            not through multiple accent colors.
+            4. No more than two accent families are present per viewport.
+            5. Only one lighter accent variant is used across all accent families.
+            6. Accent colors are not used decoratively or as large
+               background fills.
+            7. Accent colors appear only when fulfilling their semantic roles.
+            8. Orange appears only as primary action.
+            9. Only one primary orange CTA exists per section.
 
-        ENERGY & NOISE CONTROL
-        14. The design does not feel visually energetic due to excessive saturation.
-        15. Visual noise has not increased through added accent usage.
-        16. If high energy is detected, confirm saturation is reduced before
-            contrast adjustments.
+        - Semantic Integrity:
 
-        ACCESSIBILITY
-        17. Text and critical UI elements meet WCAG AA contrast requirements.
+            10. Color meanings are not repurposed:
+                - Orange → primary action
+                - Blue → system/data
+                - Green → confirmation
+                - Yellow → warning
+                - Violet → AI/premium
+                - Red → critical/destructive
+            11. No more than two semantic states appear within a single section.
+
+        - Hierarchy Control:
+
+            12. Each section contains only one dominant focal element.
+            13. Dominance is established through size, placement, or contrast —
+                not through multiple accent colors.
+
+        - Energy & Noise Control:
+
+            14. The design does not feel visually energetic due to excessive
+                saturation.
+            15. Visual noise has not increased through added accent usage.
+            16. If high energy is detected, confirm saturation is reduced before
+                contrast adjustments.
+
+        - Accessibility:
+
+            17. Text and critical UI elements meet WCAG AA contrast requirements.
 
     - Rule Output Requirements:
 
@@ -149,13 +173,16 @@ PHASE 4 — DECISION / ACTION
         - Use only artifacts from PHASE 1 ingestion.
         - Follow the single-viewport-per-cycle rule.
         - Define results strictly using the OUTPUT FORMAT.
-        - Do not add narrative, recommendations, or redesign notes unless FAIL exists.
+        - Do not add narrative, recommendations, or redesign notes unless
+          FAIL exists.
+        - Output the validation plan before execution.
 
     - Produce Results:
 
         - Return the structured output exactly as defined.
         - The count of total rules must be 17.
         - The Passed/Failed counts must match individual rule outcomes.
+        - If any rule violates format, stop and report the issue.
 
 PHASE 5 — VERIFICATION
 
@@ -172,6 +199,12 @@ PHASE 5 — VERIFICATION
 
         - Overall assessment is one of:
             - Controlled / Slight Drift / System Breakdown
+
+    - Verify Completeness:
+
+        - If validation is incomplete, restart from PHASE 1 and repeat all phases.
+        - Continue cycling until validation is complete.
+        - Do NOT terminate early while validation is incomplete.
 
     - Failure Handling:
 
