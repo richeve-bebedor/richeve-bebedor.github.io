@@ -1,0 +1,12 @@
+body.concise-component button.control {
+    height: var(--concise-control-height);
+    width: var(--concise-control-width);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.concise-component button.icon-control.control:has(> svg.icon:only-child) {
+    width: var(--concise-grid-unit);
+}
