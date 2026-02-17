@@ -7,12 +7,31 @@ type Story = StoryObj;
 
 export const PageList: Story = {
   render: () => `
-    <section
-        class="left-sidebar sidebar"
-        hx-get="/partials/page-list.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML">
-    </section>
+    <aside
+        class="
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+        >
+            <nav
+                hx-get="/stories/page-list.component.html"
+                hx-trigger="load"
+                hx-swap="innerHTML"
+            >
+            </nav>
+        </section>
+    </aside>
   `
 };
 
