@@ -1,0 +1,32 @@
+body.concise-component aside.left-sidebar.sidebar.bar.list >
+section.group-list.list.list-item > header.list-item {
+    height: var(--concise-list-item-height);
+    width: var(--concise-list-item-width);
+}
+
+body.concise-component aside.left-sidebar.sidebar.bar.list >
+section.group-list.list.list-item > header.list-item > a.header-link.link {
+    height: var(--concise-list-item-content-height);
+    width: var(--concise-list-item-content-width);
+
+    display: flex;
+    align-items: center;
+}
+
+body.concise-component aside.left-sidebar.sidebar.bar.list >
+section.group-list.list.list-item >
+header.list-item:has(> a.header-link.link:only-child) {
+    justify-content: center;
+}
+
+body.concise-component aside.left-sidebar.sidebar.bar.list >
+section.group-list.list.list-item >
+header.list-item:has(> button.header-control.icon-control.control) {
+    justify-content: flex-end;
+}
+
+body.concise-component aside.left-sidebar.sidebar.bar.list >
+section.group-list.list.list-item >
+header.list-item:has(> span.header-logo.logo.icon) {
+    justify-content: flex-start;
+}
