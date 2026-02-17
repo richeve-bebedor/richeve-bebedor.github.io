@@ -1,32 +1,39 @@
-body.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > header.list-item {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list >
+header.page-tree-header.list-item {
     height: var(--concise-list-item-height);
     width: var(--concise-list-item-width);
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > header.list-item > a.header-link.link {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list >
+header.page-tree-header.list-item > a.header-link.link {
     height: var(--concise-list-item-content-height);
     width: var(--concise-list-item-content-width);
 
     display: flex;
     align-items: center;
+
+    padding-left: var(--concise-base-spacing);
+    padding-right: var(--concise-base-spacing);
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item >
-header.list-item:has(> a.header-link.link:only-child) {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list >
+header.page-tree-header.list-item:has(> a.header-link.link:only-child) {
     justify-content: center;
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item >
-header.list-item:has(> button.header-control.icon-control.control) {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list >
+header.page-tree-header.list-item:has(
+    > button.header-control.icon-control.control
+) {
     justify-content: flex-end;
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item >
-header.list-item:has(> span.header-logo.logo.icon) {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list >
+header.page-tree-header.list-item:has(> span.header-logo.logo.icon) {
     justify-content: flex-start;
+}
+
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list >
+header.page-tree-header.list-item > button.header-control.icon-control.control {
+    background-color: transparent;
 }
