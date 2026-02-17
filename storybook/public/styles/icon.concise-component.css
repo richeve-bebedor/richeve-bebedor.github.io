@@ -15,9 +15,9 @@ body.concise-component svg.logo.icon {
     height: var(--concise-logo-icon-size);
 }
 
-body.concise-component span.icon:has(> svg.icon) {
-    width: var(--concise-grid-unit);
-    height: var(--concise-grid-unit);
+body.concise-component span.icon:has(> svg.icon:only-child) {
+    width: var(--concise-base-unit);
+    height: var(--concise-base-unit);
 
     display: flex;
     align-items: center;
