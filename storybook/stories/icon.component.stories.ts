@@ -9,7 +9,8 @@ export const Icon: Story = {
   render: () => `
     <span
         class="icon"
-        hx-get="/partials/icon.component.html"
+
+        hx-get="/stories/icon.component.html"
         hx-trigger="load"
         hx-swap="innerHTML"
     />
@@ -19,8 +20,12 @@ export const Icon: Story = {
 export const LogoIcon: Story = {
   render: () => `
     <span
-        class="logo icon"
-        hx-get="/partials/logo-icon.component.html"
+        class="
+            logo
+            icon
+        "
+
+        hx-get="/stories/logo-icon.component.html"
         hx-trigger="load"
         hx-swap="innerHTML"
     />
