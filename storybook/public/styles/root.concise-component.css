@@ -12,16 +12,31 @@
 
     --concise-base-unit: 47px;
 
-    --concise-logo-icon-size: 37px;
+    --concise-logo-icon-size: 41px;
     --concise-icon-size: 23px;
 
     --concise-text-heading-1: 31px;
+    --concise-text-heading-1-line-height: 41px;
+
     --concise-text-heading-2: 29px;
+    --concise-text-heading-2-line-height: 37px;
+
     --concise-text-heading-3: 23px;
+    --concise-text-heading-3-line-height: 31px;
+
     --concise-text-heading-4: 19px;
+    --concise-text-heading-4-line-height: 27px;
+
     --concise-text-heading-5: 17px;
+    --concise-text-heading-5-line-height: 25px;
+
     --concise-text-heading-6: 13px;
+    --concise-text-heading-6-line-height: 21px;
+
     --concise-text-base: 11px;
+    --concise-text-line-height: 17px;
+
+    --concise-base-spacing: calc((var(--concise-base-unit) / 5) / 2);
 
     --concise-text-main-section-title: var(--concise-text-heading-1);
     --concise-text-main-section-description: var(--concise-text-heading-6);
@@ -56,12 +71,46 @@
     --concise-icon-control-width: var(--concise-base-unit);
 }
 
-body.concise-component,
-body.concise-component *,
-body.concise-component nav,
-body.concise-component ul {
+@media (max-width: 329px) {
+    :root,
+    :host {
+        --concise-base-unit: 43px;
+
+        --concise-logo-icon-size: 37px;
+        --concise-icon-size: 19px;
+
+        --concise-text-heading-1: 29px;
+        --concise-text-heading-1-line-height: 37px;
+
+        --concise-text-heading-2: 23px;
+        --concise-text-heading-2-line-height: 31px;
+
+        --concise-text-heading-3: 19px;
+        --concise-text-heading-3-line-height: 27px;
+
+        --concise-text-heading-4: 17px;
+        --concise-text-heading-4-line-height: 25px;
+
+        --concise-text-heading-5: 13px;
+        --concise-text-heading-5-line-height: 21px;
+
+        --concise-text-heading-6: 11px;
+        --concise-text-heading-6-line-height: 17px;
+
+        --concise-text-base: 7px;
+        --concise-text-line-height: 13px;
+    }
+}
+
+.concise-component,
+.concise-component *,
+.concise-component nav,
+.concise-component ul
+.concise-component ol
+.concise-component li {
     font-family: var(--concise-font-family);
     font-size: var(--concise-text-base);
+    line-height: var(--concise-text-line-height);
     font-variant-ligatures: contextual;
     font-weight: normal;
 
@@ -77,26 +126,32 @@ body.concise-component ul {
     padding: 0;
 }
 
-body.concise-component h1 {
+.concise-component h1 {
     font-size: var(--concise-text-heading-1);
+    line-height: var(--concise-text-heading-1-line-height);
 }
 
-body.concise-component h2 {
+.concise-component h2 {
     font-size: var(--concise-text-heading-2);
+    line-height: var(--concise-text-heading-2-line-height);
 }
 
-body.concise-component h3 {
+.concise-component h3 {
     font-size: var(--concise-text-heading-3);
+    line-height: var(--concise-text-heading-3-line-height);
 }
 
-body.concise-component h4 {
+.concise-component h4 {
     font-size: var(--concise-text-heading-4);
+    line-height: var(--concise-text-heading-4-line-height);
 }
 
-body.concise-component h5 {
+.concise-component h5 {
     font-size: var(--concise-text-heading-5);
+    line-height: var(--concise-text-heading-5-line-height);
 }
 
-body.concise-component h6 {
+.concise-component h6 {
     font-size: var(--concise-text-heading-6);
+    line-height: var(--concise-text-heading-6-line-height);
 }
