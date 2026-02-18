@@ -15,11 +15,15 @@
     height: var(--concise-logo-icon-size);
 }
 
-.concise-component span.icon:has(> svg.icon:only-child) {
+.concise-component span.icon {
     width: var(--concise-base-unit);
     height: var(--concise-base-unit);
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.concise-component span.letter-icon.icon {
+    font-size: var(--concise-letter-icon-size);
 }
