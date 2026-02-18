@@ -1,7 +1,9 @@
 {
     "editor.bracketPairColorization.enabled": true,
     "editor.defaultFormatter": "EditorConfig.EditorConfig",
-    "editor.folding": false,
+    "editor.folding": true,
+    "editor.foldingStrategy": "auto",
+    "editor.showFoldingControls": "always",
     "editor.fontSize": 17,
     "editor.formatOnSave": true,
     "editor.glyphMargin": false,
