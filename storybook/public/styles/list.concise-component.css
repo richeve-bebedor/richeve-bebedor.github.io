@@ -15,7 +15,3 @@
     display: flex;
     flex-direction: row;
 }
-
-.concise-component section.group-list.list {
-    flex-direction: column;
-}
