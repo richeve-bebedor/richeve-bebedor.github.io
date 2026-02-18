@@ -1,0 +1,11 @@
+.concise-component div.spacer {
+    height: var(--concise-base-unit);
+}
+
+.concise-component div.unit-spacer.spacer {
+    width: var(--concise-base-unit);
+}
+
+.concise-component div.list-item.spacer {
+    width: var(--concise-list-item-width);
+}
