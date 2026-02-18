@@ -1,12 +1,14 @@
-<section
-    class="
-        row-group
-        group
-    "
->
+<section class="page">
     <div class="left-sidebar sidebar bar spacer"></div>
     <div
         hx-get="/components/page-tree.component.html"
+        hx-trigger="load"
+        hx-swap="outerHTML"
+    >
+    </div>
+    <div class="sidebar bar spacer"></div>
+    <div
+        hx-get="/components/content-tree.component.html"
         hx-trigger="load"
         hx-swap="outerHTML"
     >
