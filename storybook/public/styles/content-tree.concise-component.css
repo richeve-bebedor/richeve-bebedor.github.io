@@ -1,0 +1,28 @@
+.concise-component main.content-tree.list,
+.concise-component main.content-tree > ol.content-list.list {
+    width: var(--concise-list-width);
+    height: auto;
+}
+
+.concise-component li.content-list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.concise-component li.content-list-item > .content {
+    width: var(--concise-list-item-content-width);
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: var(--concise-base-spacing);
+    padding-right: var(--concise-base-spacing);
+}
+
+.concise-component .content-tree .main-content.content {
+    color: var(--concise-main-text-color);
+}
+
+.concise-component .content-tree .support-content.content {
+    color: var(--concise-support-text-color);
+}
