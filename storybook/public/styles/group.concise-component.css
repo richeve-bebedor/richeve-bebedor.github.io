@@ -1,0 +1,8 @@
+.concise-component section.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.concise-component section.row-group.group{
+    flex-direction: row;
+}
