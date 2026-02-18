@@ -1,0 +1,20 @@
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list,
+.concise-component aside.page-tree > nav,
+.concise-component aside.page-tree > nav > ul.page-list.list {
+    width: var(--concise-list-width);
+    height: auto;
+}
+
+.concise-component a.page-list-item-link {
+    width: var(--concise-list-item-content-width);
+    height: var(--concise-list-item-content-height);
+}
+
+@media (max-width: 329px) {
+    .concise-component div.page-tree-header-spacer.list-item.spacer {
+        display: none;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
