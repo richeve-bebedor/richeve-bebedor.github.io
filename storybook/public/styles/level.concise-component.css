@@ -1,0 +1,19 @@
+.concise-component li.list-item.level-1 {
+    height: var(--concise-level-1);
+}
+
+.concise-component li.list-item.level-2 {
+    height: var(--concise-level-2);
+}
+
+.concise-component li.list-item.level-3 {
+    height: var(--concise-level-3);
+}
+
+.concise-component li.list-item.level-4 {
+    height: var(--concise-level-4);
+}
+
+.concise-component li.list-item.level-5 {
+    height: var(--concise-level-5);
+}
