@@ -225,3 +225,16 @@ body:has(.concise-component),
     font-size: var(--concise-text-heading-6);
     line-height: var(--concise-text-heading-6-line-height);
 }
+
+.concise-component .hidden {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: -1 !important;
+    opacity: 0 !important;
+}
