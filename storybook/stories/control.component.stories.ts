@@ -38,3 +38,12 @@ export const ControlInPageTreeHeader: Story = {
     </aside>
   `
 };
+
+export const ControlWithFocusAction: Story = {
+  render: () => `
+    <div hx-get="/stories/control-with-focus-action.component.html"
+        hx-trigger="load"
+        hx-swap="outerHTML">
+    </div>
+  `
+};
