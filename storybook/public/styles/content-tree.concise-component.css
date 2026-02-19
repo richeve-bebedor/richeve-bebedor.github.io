@@ -1,7 +1,12 @@
-.concise-component main.content-tree.list,
+.concise-component main.content-tree.list {
+    width: var(--concise-list-width);
+    max-height: 100vh;
+}
+
 .concise-component main.content-tree > ol.content-list.list {
     width: var(--concise-list-width);
     height: auto;
+    overflow-y: auto;
 }
 
 .concise-component li.content-list-item {
