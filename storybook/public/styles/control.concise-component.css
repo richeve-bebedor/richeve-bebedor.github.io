@@ -28,6 +28,12 @@
     color: var(--concise-color-white-base);
 }
 
+.concise-component button.focus-action-control.control {
+    background-color: var(--concise-color-orange-base);
+}
 
+.concise-component button.focus-action-control.control * {
+    color: var(--concise-color-white-lighter);
+}
 
 
