@@ -1,24 +1,7 @@
-<main
-    class="
-        content-tree
-        list
-    "
->
-    <ol
-        class="
-            content-list
-            list
-        "
-    >
+<main class="content-tree list">
+    <ol class="content-list list">
         <li class="list-item spacer"></li>
-        <li
-            class="
-                content-list-item
-                list-item
-
-                level-2
-            "
-        >
+        <li class="content-list-item list-item level-2">
             <div class="unit-spacer spacer"></div>
             <h1 class="main-content content">
                 richeve bebedor
@@ -37,23 +20,22 @@
             <div class="unit-spacer spacer"></div>
         </li>
         <li class="list-item spacer"></li>
-        <li class="content-list-item list-item level-2">
+        <li id="are-you-gonna-hire-me"
+            class="content-list-item list-item level-2">
             <div class="unit-spacer spacer"></div>
             <h5 class="support-content content">
                 are you gonna hire me?
             </h5>
-            <button class="content-list-item-control icon-control control"
+            <button id="are-you-gonna-hire-me-control"
+                class="content-list-item-control icon-control control"
                 aria-label="Show more information"
-                hx-get="/partials/are-you-gonna-hire-me.partial.html"
+                hx-get="/partials/are-you-gonna-hire-me-expanded.partial.html"
                 hx-target="#are-you-gonna-hire-me"
                 hx-swap="outerHTML">
                 <svg class="icon">
                     <use href="/assets/images/feather-sprite.svg#chevron-right" />
                 </svg>
             </button>
-        </li>
-        <li id="are-you-gonna-hire-me"
-            class="hidden content-list-item list-item level-3">
         </li>
         <li
             class="
