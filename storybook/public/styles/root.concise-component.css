@@ -127,8 +127,17 @@
 
     --concise-base-background-color: var(--concise-color-black-base);
     --concise-base-text-color: var(--concise-color-white-base);
+
     --concise-main-text-color: var(--concise-color-white-lighter);
     --concise-support-text-color: var(--concise-color-white-light);
+    --concise-specific-text-color: var(--concise-color-white-dark);
+
+    --concise-focus-background-color: var(--concise-color-orange-base);
+    --concise-focus-color: var(--concise-color-white-lighter);
+    --concise-focus-hover-background-color: var(--concise-color-orange-light);
+    --concise-focus-hover-color: var(--concise-color-black-base);
+    --concise-focus-active-background-color: var(--concise-color-orange-base);
+    --concise-focus-active-color: var(--concise-color-black-base);
 }
 
 @media (max-width: 331px) {
