@@ -9,6 +9,7 @@
         "ziglang.vscode-zig",
         "formulahendry.auto-rename-tag",
         "detachhead.basedpyright",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "arniu.vscode-abnf"
     ]
 }
