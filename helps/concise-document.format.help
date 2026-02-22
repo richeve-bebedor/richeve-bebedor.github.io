@@ -85,12 +85,12 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - "Structure" refers to the foundational blueprint of the target data.
     - "Hash Value" refers to the unique value as a result of the applied hashing
     algorithm.
-    - "Hashing Algorithm" refers to the <?>
+    - "Hashing Algorithm" refers to the procedure used to generate hash value.
 
 6.  Conventions:
 
     - A CONCISE-RFC document file name letters SHOULD be CAPITALIZED with
-    "exceptions".
+    'exceptions'.
 
         - Exceptions:
 
@@ -99,7 +99,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             - *.help files
             - *.prompt files
 
-    - A CONCISE-RFC document file names SHOULD be one word with "exceptions".
+    - A CONCISE-RFC document file names SHOULD be one word with 'exceptions'.
 
         - Exceptions:
 
