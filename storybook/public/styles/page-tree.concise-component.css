@@ -9,12 +9,3 @@
     width: var(--concise-list-item-content-width);
     height: var(--concise-list-item-content-height);
 }
-
-@media (max-width: 329px) {
-    .concise-component div.page-tree-header-spacer.list-item.spacer {
-        display: none;
-        width: 0px;
-        height: 0px;
-        opacity: 0;
-    }
-}
