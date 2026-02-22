@@ -111,7 +111,8 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - Context wrapped in "<" and ">" MUST denote input format.
     - Context wrapped in "(" and ")" MUST denote list of options separated by "|".
     - Context wrapped in "[" and "]" MUST denote executable script.
-    - Context wrapped in double quotes MUST denote focused and emphasized subject.
+    - Context wrapped in single quotes MUST denote emphasized subject.
+    - Context wrapped in double quotes MUST denote focused subject.
 
 7.  Purpose:
 
@@ -371,11 +372,15 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             8.  Structure:
 
                 - This MUST contain the format of the target data in this document.
+                - If the document focuses on format then this section SHOULD NOT be
+                empty.
 
             9.  Flow:
 
                 - This MUST contain the list of data transitions of the target data
                 in this document.
+                - If the document focuses on flow then this section SHOULD NOT be
+                empty.
 
             A. Compliance:
 
@@ -391,6 +396,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
 9.  Flow:
 
+    - This documentation focuses on format.
     - This documentation has no data transitions.
     - This section MUST remain empty.
 
