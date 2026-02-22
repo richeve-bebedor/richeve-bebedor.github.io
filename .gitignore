@@ -78,6 +78,9 @@
 !helps/
 !helps/**/*.help
 
+!prompts/
+!prompts/**/*.prompt
+
 !public/
 !public/**/*
 
@@ -121,9 +124,9 @@
 !tests/**/*.ps1
 !tests/**/*.sh
 
-!todo/
-!todo/**/*.todo
-!todo/**/*.done
+!todos/
+!todos/**/*.todo
+!todos/**/*.done
 
 !waste/
 !waste/**/*
