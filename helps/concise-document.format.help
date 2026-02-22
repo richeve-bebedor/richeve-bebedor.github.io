@@ -10,10 +10,11 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - GROUP: VS-FORMATS
     - TITLE: CONCISE RFC FORMAT
     - ACRONYM: CRFCF
-    - AUTHOR: RICHEVE BEBEDOR <richeve.bebedor+vs-formats@gmail.com>
+    - AUTHOR: RICHEVE BEBEDOR
+    - CONTACT: richeve.bebedor963+vs-formats@proton.me
     - CATEGORY: EXPERIMENTAL
     - STATUS: DRAFT
-    - VERSION: 000000 (0.0.0)
+    - VERSION: 000000-0.0.0
     - CREATED: 2026-02-22
     - MODIFIED: 2026-02-22
     - CHECKSUM: [run:scripts/validate-concise-document.ps1]
@@ -31,18 +32,18 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
 3.  Sections:
 
-    0.  METADATA: 000
-    1.  Summary: 000
-    2.  Permissions: 000
-    3.  Sections: 000
-    4.  Status: 000
-    5.  Language: 000
-    6.  Conventions: 000
-    7.  Purpose: 000
-    8.  Structure: 000
-    9.  Flow: 000
-    A.  Compliance: 000
-    B.  References: 000
+    0.  METADATA:       000
+    1.  Summary:        000
+    2.  Permissions:    000
+    3.  Sections:       000
+    4.  Status:         000
+    5.  Language:       000
+    6.  Conventions:    000
+    7.  Purpose:        000
+    8.  Structure:      000
+    9.  Flow:           000
+    A.  Compliance:     000
+    B.  References:     000
 
 4.  Status:
 
@@ -55,7 +56,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - A CONCISE-RFC document MUST express specifications in simple, clear,
     structured human language understandable by humans and machines.
 
-    - A CONCISE-RFC document MUST use the following normative key words
+    - A CONCISE-RFC document MUST use the following normative "key words"
     derived from RFC-2119 and RFC-8174.
 
         - Key Words:
@@ -71,19 +72,25 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - "SHOULD" denotes a strong recommendation with defined exceptions.
     - "SHOULD NOT" denotes a strong discouragement with defined exceptions.
 
+    - "Normative Language" refers to the binding requirements for compliance.
     - "Data" refers to functional information with one and only one
     non-contradictory meaning.
+    - "Functional Information" refers to information with purpose.
     - "Agents" refers to software or hardware with artificial intelligence.
-    - "Prompt" refers to language expressions understood by agents.
+    - "Prompt" refers to rule statements understood by agents.
     - "Flow" refers to the minimum amount of data for any data to transition from
     the original data to the expected data.
     - "RFC" refers to request for comment documentation.
-    - "Target data" refers to the purpose and usage of this documentation.
+    - "Target Data" refers to the purpose and usage of this documentation.
     - "Structure" refers to the foundational blueprint of the target data.
+    - "Hash Value" refers to the unique value as a result of the applied hashing
+    algorithm.
+    - "Hashing Algorithm" refers to the <?>
 
 6.  Conventions:
 
-    - A CONCISE-RFC document file name letters SHOULD be CAPITALIZED.
+    - A CONCISE-RFC document file name letters SHOULD be CAPITALIZED with
+    "exceptions".
 
         - Exceptions:
 
@@ -92,7 +99,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             - *.help files
             - *.prompt files
 
-    - A CONCISE-RFC document file names SHOULD be one word.
+    - A CONCISE-RFC document file names SHOULD be one word with "exceptions".
 
         - Exceptions:
 
@@ -108,7 +115,8 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
 7.  Purpose:
 
-    - A CONCISE-RFC document MUST enforce the following:
+    - A CONCISE-RFC document MUST enforce "conciseness", "consistency", "clarity",
+    "comprehension" and "communication".
 
         - Conciseness:
 
@@ -136,18 +144,16 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - A CONCISE-RFC document MUST be in text format.
     - A CONCISE-RFC document MUST be encoded in UTF-8 without BOM.
     - A CONCISE-RFC document MUST use LF as the EOL style.
-    - A CONCISE-RFC document MUST end with a trailing newline.
-    - A CONCISE-RFC document MUST NOT exceed 997 lines of text.
+    - A CONCISE-RFC document MUST end with 1 trailing newline.
+    - A CONCISE-RFC document MUST NOT exceed 997 lines.
     - Each line in CONCISE-RFC document MUST have a maximum of 83 characters.
 
     - A CONCISE-RFC document MUST be composed of sections.
-    - A CONCISE-RFC document MUST follow <?> for the format of section.
-    - A CONCISE-RFC document
 
-    - A CONCISE-RFC document MUST begin with the notice section for unauthorized
-    modification in this structure:
+    - A CONCISE-RFC document MUST begin with the notice section for
+    "unauthorized modification".
 
-        - Unauthorized Modification Format:
+        - Unauthorized Modification:
 
             UNAUTHORIZED MODIFICATION OF THIS DOCUMENT IS PROHIBITED.
             EDITING RIGHTS RESERVED FOR AUTHOR AND DESIGNATED CONTRIBUTORS.
@@ -157,10 +163,9 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
         - The notice for unauthorized modification MUST NOT be modified.
 
-    - A CONCISE-RFC document MUST contain the following main sections in this
-    structure:
+    - A CONCISE-RFC document MUST contain 12 ordered "main sections".
 
-        - Main Section Order:
+        - Main Sections:
 
             1. METADATA
             2. Summary
@@ -175,7 +180,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             11. Compliance
             12. References
 
-    - A CONCISE-RFC document MUST follow the section tree using this structure:
+    - A CONCISE-RFC document MUST follow specific "section tree" structure.
 
         - Section Tree:
 
@@ -192,7 +197,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             A.  Compliance:
             B.  References:
 
-    - A CONCISE-RFC document MUST follow the content structure of each sections:
+    - A CONCISE-RFC document MUST follow the "content structure" of each sections:
 
         - Content Structure:
 
@@ -200,93 +205,117 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
                 - This section MUST contain the metadata of the CONCISE-RFC
                 document.
-                - The metadata of CONCISE-RFC document MUST have the following
-                items in this order:
+                - A CONCISE-RFC document MUST contain 12 ordered "metadata items".
 
-                    - Metadata Item Order:
+                    - Metadata Items:
 
                         1. RFC
                         2. GROUP
                         3. TITLE
                         4. ACRONYM
                         5. AUTHOR
-                        6. CATEGORY
-                        7. STATUS
-                        8. VERSION
-                        9. CREATED
-                        10. MODIFIED
-                        11. CHECKSUM
+                        6. CONTACT
+                        7. CATEGORY
+                        8. STATUS
+                        9. VERSION
+                        10. CREATED
+                        11. MODIFIED
+                        12. CHECKSUM
 
-                - Each metadata item content of CONCISE-RFC document MUST follow
-                this structure:
+                - A CONCISE-RFC document MUST follow a specific
+                "metadata item structure".
 
-                Metadata Item Content:
+                    - Metadata Item Structure:
 
-                    - RFC: CONCISE-RFC-<XXXXXX>
+                        - RFC: CONCISE-RFC-<XXXXXX>
+                        - GROUP: <GROUP PROJECT NAME>
+                        - TITLE: <UNIQUE AND CONCISE DOCUMENT TITLE>
+                        - ACRONYM: <UACDT>
+                        - AUTHOR: <FIRST NAME> <LAST NAME>
+                        - CONTACT: <email>
+                        - CATEGORY: (SPECIFICATION|INFORMATIONAL|EXPERIMENTAL)
+                        - STATUS: (DRAFT|REVIEW|STABLE|DEPRECATED|OBSOLETE)
+                        - VERSION: <XXXXXX>-<X.X.X>
+                        - CREATED: <YYYY-MM-DD>
+                        - MODIFIED: <YYYY-MM-DD>
+                        - CHECKSUM: <SHA-256>
 
-                        - This MUST be the CONCISE-RFC format version name of the
-                        CONCISE-RFC format used by this document.
+                - Each "metadata item content" of CONCISE-RFC document MUST follow
+                a specific structure.
 
-                    - GROUP: <GROUP PROJECT NAME>
+                    - Metadata Item Content:
 
-                        - This MUST be the name of the project category.
+                        - RFC:
 
-                    - TITLE: <UNIQUE AND CONCISE DOCUMENT TITLE>
+                            - This MUST contain the version name of the CONCISE-RFC
+                            format used by this document.
 
-                        - This MUST have a maximum of 5 letter word.
+                        - GROUP:
 
-                    - ACRONYM: <UACDT>
+                            - This MUST contain the name of the project category.
 
-                        - This MUST have 5 uppercase alphanumeric characters.
+                        - TITLE:
 
-                    - AUTHOR: <FIRST NAME> <LAST NAME> <email>
+                            - This MUST have a maximum of 5 letter word.
 
-                        - This MUST not be modified unless original author
-                        transfers ownership.
+                        - ACRONYM:
 
-                    - CATEGORY: (SPECIFICATION|INFORMATIONAL|EXPERIMENTAL)
+                            - This MUST have 5 uppercase alphanumeric characters.
 
-                        - Specification means this document is standard.
-                        - Informational means this is a supporting document.
-                        - Experimental means this document is in prototype stage.
+                        - AUTHOR:
 
-                    - STATUS: (DRAFT|REVIEW|STABLE|DEPRECATED|OBSOLETE)
+                            - This MUST not be modified unless original author
+                            transfers ownership.
 
-                        - Draft means this document in a work in progress.
-                        - Review means this document is being audited.
-                        - Stable means this document is in production.
-                        - Deprecated means this document will soon be obsolete.
-                        - Obsolete means this document was deprecated and
-                        unsupported.
+                        - CONTACT:
 
-                    - VERSION: <XXXXXX> <X.X.X>
+                            - This MUST contain the email address of the author.
 
-                        - This MUST be the version of this document.
-                        - This MUST composed of 6 digits followed by the SEMVER
-                        format.
+                        - CATEGORY:
 
-                    - CREATED: <YYYY-MM-DD>
+                            - Specification means this document is standard.
+                            - Informational means this is a supporting document.
+                            - Experimental means this document is a prototype.
 
-                        - The date this document was created.
+                        - STATUS:
 
-                    - MODIFIED: <YYYY-MM-DD>
+                            - Draft means this document in a work in progress.
+                            - Review means this document is being audited.
+                            - Stable means this document is in production.
+                            - Deprecated means this document will soon be obsolete.
+                            - Obsolete means this document was deprecated and
+                            unsupported.
 
-                        - The date this document was modified.
+                        - VERSION:
 
-                    - CHECKSUM: <SHA-256>
+                            - This MUST be the version of this document.
+                            - This MUST composed of 6 digits followed by the SEMVER
+                            format.
 
-                        - The SHA-256 checksum of this document as per result of
-                        scripts/validate-concise-document.ps1 script.
+                        - CREATED:
+
+                            - The date this document was created.
+
+                        - MODIFIED:
+
+                            - The date this document was modified.
+
+                        - CHECKSUM:
+
+                            - The SHA-256 hash value of this document as per result
+                            of scripts/validate-concise-document.ps1 script.
 
             1.  Summary:
 
                 - This section MUST contain the abstract of this document.
+                - The abstract of this document MUST have a maximum of 5 sentences
+                with one sentence per line.
 
             2.  Permissions:
 
-                - This section MUST contain the notice for permission.
+                - This section MUST contain the notice for "permission".
 
-                    - Permission Notice Format:
+                    - Permission:
 
                         USAGE OF THIS DOCUMENT REQUIRES LICENSE COMPLIANCE.
                         MODIFICATION RIGHTS ARE GOVERNED BY THE LICENSE TERMS.
@@ -294,14 +323,14 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
                         DISTRIBUTION MUST ADHERE TO THE LICENSE RESTRICTIONS.
                         REFER TO THE LICENSE FILE FOR THE COMPLETE INFORMATION.
 
-                - This MUST be contained in all CONCISE-RFC documents except the
+                - This SHOULD be contained in all CONCISE-RFC documents except the
                 LICENSE file.
 
             3.  Sections:
 
-                - This MUST contain the table of contents of this document.
+                - This MUST contain the "table of contents" of this document.
 
-                    - Sections Format:
+                    - Table Of Contents:
 
                         0.  METADATA:       000
                         1.  Summary:        000
@@ -341,18 +370,16 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
             8.  Structure:
 
-                - This MUST contain the format specification of the target data in
-                this document.
+                - This MUST contain the format of the target data in this document.
 
             9.  Flow:
 
-                - This MUST contain the processes of transition of the target data
+                - This MUST contain the list of data transitions of the target data
                 in this document.
 
             A. Compliance:
 
-                - This MUST contain list of prompts and rules for machines and
-                humans.
+                - This MUST contain list of rules for machines and humans.
 
             B. References:
 
@@ -364,7 +391,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
 9.  Flow:
 
-    - This is a format documentation.
+    - This documentation has no data transitions.
     - This section MUST remain empty.
 
 A.  Compliance:
@@ -391,4 +418,5 @@ B.  References:
     - BOM
     - LF
     - EOL
-    -
+    - SHA-256
+    - CHECKSUM
