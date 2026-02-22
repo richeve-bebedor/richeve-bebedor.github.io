@@ -67,8 +67,7 @@
 !electron/dist/**/*
 
 !formats/
-!formats/**/*.abnf
-!formats/**/*.peg
+!formats/**/*.format
 
 !go/
 !go/service/
