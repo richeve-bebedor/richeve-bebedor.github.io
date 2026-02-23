@@ -77,7 +77,7 @@
             "label": "Close Storybook",
             "dependsOn": [
                 "Close Storybook Preview Tab",
-                "Terminate Internal Storybook"
+                "Terminate Background Storybook"
             ],
             "dependsOrder": "sequence",
             "problemMatcher": []
