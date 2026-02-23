@@ -14,7 +14,7 @@
             }
         },
         {
-            "label": "Internal Storybook",
+            "label": "Background Storybook",
             "type": "npm",
             "script": "storybook",
             "path": "storybook",
@@ -41,18 +41,18 @@
             ]
         },
         {
-            "label": "Storybook",
+            "label": "Open Storybook",
             "dependsOn": [
-                "Internal Storybook",
+                "Background Storybook",
                 "Storybook Preview"
             ],
             "dependsOrder": "sequence",
             "problemMatcher": []
         },
         {
-            "label": "Terminate Internal Storybook",
+            "label": "Terminate Background Storybook",
             "type": "shell",
-            "command": "echo ${input:terminateInternalStorybook}",
+            "command": "echo ${input:terminateBackgroundStorybook}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "never",
@@ -74,7 +74,7 @@
             }
         },
         {
-            "label": "Close Preview & Terminate",
+            "label": "Close Storybook",
             "dependsOn": [
                 "Close Storybook Preview Tab",
                 "Terminate Internal Storybook"
@@ -93,10 +93,10 @@
             ]
         },
         {
-            "id": "terminateInternalStorybook",
+            "id": "terminateBackgroundStorybook",
             "type": "command",
             "command": "workbench.action.tasks.terminate",
-            "args": "Internal Storybook"
+            "args": "Background Storybook"
         },
         {
             "id": "closeStorybookPreviewTab",
