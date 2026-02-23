@@ -87,6 +87,7 @@
     --concise-color-black-light:    rgba(53, 53, 53, 1);
     --concise-color-black-lighter:  rgba(79, 79, 79, 1);
 
+    --concise-equilateral-ratio: 0.8660254;
     --concise-base-division: calc(var(--concise-base-unit) / 5);
     --concise-base-spacing: calc(var(--concise-base-division) / 2);
 
