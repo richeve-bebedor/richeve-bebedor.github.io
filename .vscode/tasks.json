@@ -62,9 +62,9 @@
             }
         },
         {
-            "label": "Close Storybook Preview Tab",
+            "label": "Close Storybook Preview",
             "type": "shell",
-            "command": "echo ${input:closeStorybookPreviewTab}",
+            "command": "echo ${input:closeStorybookPreview}",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "never",
@@ -76,7 +76,7 @@
         {
             "label": "Close Storybook",
             "dependsOn": [
-                "Close Storybook Preview Tab",
+                "Close Storybook Preview",
                 "Terminate Background Storybook"
             ],
             "dependsOrder": "sequence",
@@ -87,10 +87,7 @@
         {
             "id": "openStorybookPreview",
             "type": "command",
-            "command": "simpleBrowser.api.open",
-            "args": [
-                "http://localhost:3690"
-            ]
+            "command": "workbench.action.debug.start"
         },
         {
             "id": "terminateBackgroundStorybook",
@@ -99,9 +96,9 @@
             "args": "Background Storybook"
         },
         {
-            "id": "closeStorybookPreviewTab",
+            "id": "closeStorybookPreview",
             "type": "command",
-            "command": "workbench.action.closeActiveEditor"
+            "command": "workbench.action.debug.stop"
         }
     ]
 }
