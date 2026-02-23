@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 3690",
     "build": "storybook build --output-dir storybook-static"
   },
   "devDependencies": {
