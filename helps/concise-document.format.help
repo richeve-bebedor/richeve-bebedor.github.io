@@ -17,7 +17,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     - VERSION: 000000-0.0.0
     - CREATED: 2026-02-22
     - MODIFIED: 2026-02-22
-    - CHECKSUM: [run:scripts/validate-concise-document.ps1]
+    - CHECKSUM: [scripts/validate-concise-document.ps1]
 
 1.  Summary:
 
@@ -35,7 +35,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
     0.  METADATA:       000
     1.  Summary:        000
     2.  Permissions:    000
-    3.  Sections:       000
+    3.  Contents:       000
     4.  Status:         000
     5.  Language:       000
     6.  Conventions:    000
@@ -171,7 +171,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             1. METADATA
             2. Summary
             3. Permissions
-            4. Sections
+            4. Contents
             5. Status
             6. Language
             7. Conventions
@@ -188,7 +188,7 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
             0.  METADATA:
             1.  Summary:
             2.  Permissions:
-            3.  Sections:
+            3.  Contents:
             4.  Status:
             5.  Language:
             6.  Conventions:
@@ -248,29 +248,32 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
                         - RFC:
 
-                            - This MUST contain the version name of the CONCISE-RFC
-                            format used by this document.
+                            - The RFC item MUST contain the version name of the
+                            CONCISE-RFC format used by this document.
 
                         - GROUP:
 
-                            - This MUST contain the name of the project category.
+                            - The GROUP item MUST contain the name of the project
+                            category.
 
                         - TITLE:
 
-                            - This MUST have a maximum of 5 letter word.
+                            - The TITLE item MUST have a maximum of 5 letter word.
 
                         - ACRONYM:
 
-                            - This MUST have 5 uppercase alphanumeric characters.
+                            - The ACRONYM item MUST have 5 uppercase alphanumeric
+                            characters.
 
                         - AUTHOR:
 
-                            - This MUST not be modified unless original author
-                            transfers ownership.
+                            - The AUTHOR item MUST NOT be modified unless original
+                            author transfers ownership.
 
                         - CONTACT:
 
-                            - This MUST contain the email address of the author.
+                            - The CONTACT item MUST contain the email address of
+                            the author.
 
                         - CATEGORY:
 
@@ -289,32 +292,38 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
 
                         - VERSION:
 
-                            - This MUST be the version of this document.
-                            - This MUST composed of 6 digits followed by the SEMVER
-                            format.
+                            - The VERSION item MUST be the version of this
+                            document.
+                            - The VERSION item MUST be composed of 6 digits
+                            followed by the SEMVER format.
 
                         - CREATED:
 
-                            - The date this document was created.
+                            - The CREATED item MUST contain the date this document
+                            was created.
 
                         - MODIFIED:
 
-                            - The date this document was modified.
+                            - The MODIFIED item MUST contain date this document was
+                            modified.
 
                         - CHECKSUM:
 
-                            - The SHA-256 hash value of this document as per result
-                            of scripts/validate-concise-document.ps1 script.
+                            - The CHECKSUM item MUST contain the SHA-256 hash value
+                            of this document as per result of running the
+                            scripts/validate-concise-document.ps1 script.
 
             1.  Summary:
 
-                - This section MUST contain the abstract of this document.
-                - The abstract of this document MUST have a maximum of 5 sentences
-                with one sentence per line.
+                - The 'Summary' section MUST contain the abstract of this document.
+
+                    - The abstract of this document MUST have a maximum of 5
+                    sentences with one sentence per line.
 
             2.  Permissions:
 
-                - This section MUST contain the notice for "permission".
+                - The 'Permissions' section MUST contain the notice for
+                "permission".
 
                     - Permission:
 
@@ -324,19 +333,24 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
                         DISTRIBUTION MUST ADHERE TO THE LICENSE RESTRICTIONS.
                         REFER TO THE LICENSE FILE FOR THE COMPLETE INFORMATION.
 
-                - This SHOULD be contained in all CONCISE-RFC documents except the
-                LICENSE file.
+                - The notice for permission SHOULD be contained in all CONCISE-RFC
+                documents except the LICENSE file.
 
-            3.  Sections:
+            3.  Contents:
 
-                - This MUST contain the "table of contents" of this document.
+                - This 'Contents' section MUST contain the "table of contents" of
+                this document.
+                - The 'Contents' section MUST list the section titles and the
+                corresponding line numbers in zero left-padded 3 digits.
+                - The 'Contents' MUST follow specific "table of contents"
+                structure.
 
                     - Table Of Contents:
 
                         0.  METADATA:       000
                         1.  Summary:        000
                         2.  Permissions:    000
-                        3.  Sections:       000
+                        3.  Contents:       000
                         4.  Status:         000
                         5.  Language:       000
                         6.  Conventions:    000
@@ -346,53 +360,56 @@ AUTOMATED SCRIPTS DETECT AND PREVENT UNAUTHORIZED CHANGES.
                         A.  Compliance:     000
                         B.  References:     000
 
-                    - This MUST list the section titles and their corresponding
-                    line numbers in zero left-padded 3 digits.
-
             4.  Status:
 
-                - This MUST contain the descriptive status of this document.
+                - The 'Status' section MUST contain the descriptive status of this
+                document.
 
             5.  Language:
 
-                - This MUST contain the normative language of this document.
-                - This MUST contain the list of complex words and their usage in
+                - The 'Language' section MUST contain the normative language of
                 this document.
+                - The 'Language' section MUST contain the list of complex words and
+                the usage of these words in this document.
 
             6.  Conventions:
 
-                - This MUST contain the naming conventions of this document.
-                - This MUST contain the structure and flow conventions used in this
-                document.
+                - The 'Conventions' section MUST contain the naming conventions of
+                this document.
+                - The 'Conventions' section MUST contain the structure and flow
+                conventions used in this document.
 
             7.  Purpose:
 
-                - This MUST contain the goals of this document.
+                - The 'Purpose' section MUST contain the goals of this document.
 
             8.  Structure:
 
-                - This MUST contain the format of the target data in this document.
-                - If the document focuses on format then this section SHOULD NOT be
-                empty.
+                - The 'Structure' section MUST contain the format of the target
+                data in this document.
+                - If the document focuses on format then the 'Structure' section
+                SHOULD NOT be empty.
 
             9.  Flow:
 
-                - This MUST contain the list of data transitions of the target data
-                in this document.
-                - If the document focuses on flow then this section SHOULD NOT be
-                empty.
+                - The 'Flow' section MUST contain the list of 'data transitions' of
+                the 'target data' in this document.
+                - If the document focuses on 'flow' then the 'Flow' section SHOULD
+                NOT be empty.
 
             A. Compliance:
 
-                - This MUST contain list of rules for machines and humans.
+                - The 'Compliance' section MUST contain list of rules for machines
+                and humans.
 
             B. References:
 
-                - This MUST contain the related files and technical words used in
-                this document.
-                - Technical words MUST be available in the internet.
-                - File paths MUST be relative to the repository directory where
-                this document resides.
+                - The 'References' section MUST contain the related 'file paths'
+                and 'technical words' used in this document.
+
+                    - 'Technical words' MUST be available in the internet.
+                    - 'File paths' MUST be relative to the repository directory
+                    where this document resides.
 
 9.  Flow:
 
