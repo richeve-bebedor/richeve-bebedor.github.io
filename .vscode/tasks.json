@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Storybook Preview",
+            "type": "shell",
+            "command": "echo ${input:openStorybookPreview}",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never",
+                "echo": false,
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Storybook",
+            "dependsOn": [
+                "npm: storybook",
+                "Storybook Preview"
+            ],
+            "dependsOrder": "parallel",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "openStorybookPreview",
+            "type": "command",
+            "command": "simpleBrowser.api.open",
+            "args": [
+                "http://localhost:3690"
+            ]
+        }
+    ]
+}
