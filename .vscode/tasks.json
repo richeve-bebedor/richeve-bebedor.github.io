@@ -19,6 +19,7 @@
             "script": "storybook",
             "path": "storybook",
             "isBackground": true,
+            "promptOnClose": true,
             "problemMatcher": [
                 {
                     "owner": "custom",
@@ -47,6 +48,39 @@
             ],
             "dependsOrder": "sequence",
             "problemMatcher": []
+        },
+        {
+            "label": "Terminate Internal Storybook",
+            "type": "shell",
+            "command": "echo ${input:terminateInternalStorybook}",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never",
+                "echo": false,
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Close Storybook Preview Tab",
+            "type": "shell",
+            "command": "echo ${input:closeStorybookPreviewTab}",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never",
+                "echo": false,
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Close Preview & Terminate",
+            "dependsOn": [
+                "Close Storybook Preview Tab",
+                "Terminate Internal Storybook"
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": []
         }
     ],
     "inputs": [
@@ -57,6 +91,17 @@
             "args": [
                 "http://localhost:3690"
             ]
+        },
+        {
+            "id": "terminateInternalStorybook",
+            "type": "command",
+            "command": "workbench.action.tasks.terminate",
+            "args": "Internal Storybook"
+        },
+        {
+            "id": "closeStorybookPreviewTab",
+            "type": "command",
+            "command": "workbench.action.closeActiveEditor"
         }
     ]
 }
