@@ -16,7 +16,12 @@
 
 .concise-component a.icon-link.link {
     height: var(--concise-icon-control-height);
+    min-height: var(--concise-icon-control-height);
+    max-height: var(--concise-icon-control-height);
+
     width: var(--concise-icon-control-width);
+    min-width: var(--concise-icon-control-width);
+    max-width: var(--concise-icon-control-width);
 
     align-items: center;
     justify-content: center;
