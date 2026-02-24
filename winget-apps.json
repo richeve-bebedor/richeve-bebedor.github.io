@@ -34,6 +34,16 @@
                     "PackageIdentifier": "StrawberryPerl.StrawberryPerl",
                     "Version": "5.42.0.1",
                     "Source": "winget"
+                },
+                {
+                    "PackageIdentifier": "Gyan.FFmpeg",
+                    "Version": "8.0.1",
+                    "Source": "winget"
+                },
+                {
+                    "PackageIdentifier": "ImageMagick.ImageMagick",
+                    "Version": "7.1.2.15",
+                    "Source": "winget"
                 }
             ]
         }
