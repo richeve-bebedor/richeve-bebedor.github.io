@@ -60,6 +60,11 @@
 !.vscode/
 !.vscode/**/*.json
 
+!assets/
+!assets/images/
+!assets/images/**/*.svg
+!assets/images/**/*.png
+
 !electron/
 !electron/src/
 !electron/src/**/*
