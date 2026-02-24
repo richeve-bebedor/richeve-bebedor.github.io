@@ -52,6 +52,10 @@
 !*.pdf
 !*.yaml
 
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+
 !.husky/
 !.husky/commit-msg
 !.husky/pre-commit
