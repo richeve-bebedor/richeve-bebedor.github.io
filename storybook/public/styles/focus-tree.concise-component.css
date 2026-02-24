@@ -1,15 +1,12 @@
-.concise-component main.focus-tree.list {
+.concise-component article.focus-tree.list {
     width: var(--concise-list-width);
     min-width: var(--concise-list-width);
     max-width: var(--concise-list-width);
 
-
-    height: 100vh;
-    min-height: 100vh;
-    max-height: 100vh;
+    height: auto;
 }
 
-.concise-component main.focus-tree > ol.focus-tree-list.list {
+.concise-component article.focus-tree > ol.focus-tree-list.list {
     width: var(--concise-list-width);
     min-width: var(--concise-list-width);
     max-width: var(--concise-list-width);
@@ -36,13 +33,13 @@
     padding-right: var(--concise-base-spacing);
 }
 
-.concise-component main.focus-tree .main-content.content {
+.concise-component article.focus-tree .main-content.content {
     justify-content: center;
 
     color: var(--concise-main-text-color);
 }
 
-.concise-component main.focus-tree .support-content.content {
+.concise-component article.focus-tree .support-content.content {
     justify-content: center;
 
     color: var(--concise-support-text-color);
