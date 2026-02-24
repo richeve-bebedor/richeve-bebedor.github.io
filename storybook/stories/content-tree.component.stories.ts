@@ -7,14 +7,14 @@ type Story = StoryObj;
 
 export const ContentTreeBare: Story = {
   render: () => `
-    <article>
-    </article>
+    <main class="content-tree list">
+    </main>
   `
 };
 
 export const ContentTreeBase: Story = {
   render: () => `
-    <article>
-    </article>
+    <main class="content-tree list">
+    </main>
   `
 };
