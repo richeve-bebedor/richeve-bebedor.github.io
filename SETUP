@@ -6,13 +6,7 @@ scripts/install-node-version.ps1
 scripts/setup-npm-packages.ps1
 
 scripts/setup-htmx.ps1 -DestinationDirectory storybook\public\scripts
-scripts/setup-htmx.ps1 -DestinationDirectory public\scripts
-
 scripts/setup-pico-css.ps1 -DestinationDirectory storybook\public\styles
-scripts/setup-pico-css.ps1 -DestinationDirectory public\styles
-
 scripts/setup-feather-icons.ps1 -DestinationDirectory storybook\public\assets\images
-scripts/setup-feather-icons.ps1 -DestinationDirectory public\assets\images
-
 scripts/setup-fira-code.ps1 -DestinationDirectory storybook\public\assets\fonts
-scripts/setup-fira-code.ps1 -DestinationDirectory public\assets\fonts
+
