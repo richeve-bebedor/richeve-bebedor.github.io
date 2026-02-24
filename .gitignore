@@ -61,7 +61,13 @@
 !.vscode/**/*.json
 
 !assets/
+!assets/audios/
+!assets/documents/
+!assets/fonts/
 !assets/images/
+!assets/images/
+!assets/media/
+!assets/videos/
 !assets/images/**/*.svg
 !assets/images/**/*.png
 
