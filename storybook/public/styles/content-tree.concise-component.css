@@ -37,9 +37,13 @@
 }
 
 .concise-component main.content-tree .main-content.content {
+    justify-content: center;
+
     color: var(--concise-main-text-color);
 }
 
 .concise-component main.content-tree .support-content.content {
+    justify-content: center;
+
     color: var(--concise-support-text-color);
 }
