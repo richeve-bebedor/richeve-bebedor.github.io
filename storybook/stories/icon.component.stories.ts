@@ -5,7 +5,7 @@ export default meta;
 
 type Story = StoryObj;
 
-export const Icon: Story = {
+export const IconBare: Story = {
   render: () => `
     <span
         class="icon"
@@ -17,7 +17,7 @@ export const Icon: Story = {
   `
 };
 
-export const LogoIcon: Story = {
+export const IconWithLogo: Story = {
   render: () => `
     <span class="logo-icon icon"
 
@@ -28,7 +28,7 @@ export const LogoIcon: Story = {
   `
 };
 
-export const LetterIcon: Story = {
+export const IconWithLetter: Story = {
   render: () => `
     <span class="letter-icon icon" role="img" aria-label="volkovasystems">
         <span aria-hidden="true">vs</span>
@@ -36,7 +36,7 @@ export const LetterIcon: Story = {
   `
 };
 
-export const ColorIcon: Story = {
+export const IconWithColor: Story = {
   render: () => `
     <span class="color-icon icon"
         role="img"
@@ -45,7 +45,7 @@ export const ColorIcon: Story = {
   `
 };
 
-export const LetterColorIcon: Story = {
+export const IconWithLetterColor: Story = {
   render: () => `
     <span class="letter-icon color-icon icon" role="img" aria-label="volkovasystems">
         <span aria-hidden="true">vs</span>
@@ -53,7 +53,7 @@ export const LetterColorIcon: Story = {
   `
 };
 
-export const RoundColorIcon: Story = {
+export const IconWithRoundColor: Story = {
   render: () => `
     <span class="round-icon shape-icon color-icon icon"
         role="img"
@@ -62,7 +62,7 @@ export const RoundColorIcon: Story = {
   `
 };
 
-export const SquareColorIcon: Story = {
+export const IconWithSquareColor: Story = {
   render: () => `
     <span class="square-icon shape-icon color-icon icon"
         role="img"
@@ -71,7 +71,7 @@ export const SquareColorIcon: Story = {
   `
 };
 
-export const TriangleColorIcon: Story = {
+export const IconWithTriangleColor: Story = {
   render: () => `
     <span class="triangle-icon shape-icon color-icon icon"
         role="img"
@@ -80,7 +80,7 @@ export const TriangleColorIcon: Story = {
   `
 };
 
-export const RoundColorIconBase: Story = {
+export const IconWithRoundColorBase: Story = {
   render: () => `
     <span
         class="round-icon shape-icon color-icon icon"
@@ -94,7 +94,7 @@ export const RoundColorIconBase: Story = {
   `
 };
 
-export const SquareColorIconBase: Story = {
+export const IconWithSquareColorBase: Story = {
   render: () => `
     <span
         class="square-icon shape-icon color-icon icon"
@@ -108,7 +108,7 @@ export const SquareColorIconBase: Story = {
   `
 };
 
-export const TriangleColorIconBase: Story = {
+export const IconWithTriangleColorBase: Story = {
   render: () => `
     <span
         class="triangle-icon shape-icon color-icon icon"
@@ -122,7 +122,7 @@ export const TriangleColorIconBase: Story = {
   `
 };
 
-export const RoundLetterColorIconBase: Story = {
+export const IconWithRoundLetterColor: Story = {
   render: () => `
     <span
         class="round-icon shape-icon letter-icon color-icon icon"
@@ -134,7 +134,7 @@ export const RoundLetterColorIconBase: Story = {
   `
 };
 
-export const SquareLetterColorIconBase: Story = {
+export const IconWithSquareLetterColor: Story = {
   render: () => `
     <span
         class="square-icon shape-icon letter-icon color-icon icon"
@@ -146,7 +146,7 @@ export const SquareLetterColorIconBase: Story = {
   `
 };
 
-export const TriangleLetterColorIconBase: Story = {
+export const IconWithTriangleLetterColor: Story = {
   render: () => `
     <span
         class="triangle-icon shape-icon letter-icon color-icon icon"
