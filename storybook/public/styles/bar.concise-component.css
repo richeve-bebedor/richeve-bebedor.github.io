@@ -1,9 +1,17 @@
 .concise-component .bar {
-    min-width: var(--concise-base-unit);
-    height: var(--concise-base-unit);
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: auto;
+    min-height: var(--concise-base-unit);
 }
 
 .concise-component .sidebar {
-    width: var(--concise-base-unit);
     height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    width: auto;
+    min-width: var(--concise-base-unit);
 }
