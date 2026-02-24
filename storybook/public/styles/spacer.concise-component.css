@@ -1,14 +1,32 @@
 .concise-component div.spacer {
     height: var(--concise-base-unit);
     min-height: var(--concise-base-unit);
-}
 
-.concise-component div.unit-spacer.spacer {
     width: var(--concise-base-unit);
     min-width: var(--concise-base-unit);
 }
 
-.concise-component div.list-item.spacer {
+.concise-component div.bar.spacer {
+    height: var(--concise-base-unit);
+    min-height: var(--concise-base-unit);
+
+    width: 100vw;
+    min-width: 100vw;
+}
+
+.concise-component div.sidebar.spacer {
+    width: var(--concise-base-unit);
+    min-width: var(--concise-base-unit);
+
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.concise-component div.item.spacer,
+.concise-component li.item.spacer {
     width: var(--concise-list-item-width);
     min-width: var(--concise-list-item-width);
+
+    height: var(--concise-base-unit);
+    min-height: var(--concise-base-unit);
 }
