@@ -24,11 +24,11 @@
     "prepare": "husky || true"
   },
   "engines": {
-    "node": "24.13.1",
+    "node": "24.14.0",
     "npm": "11.10.1"
   },
   "volta": {
-    "node": "24.13.1",
+    "node": "24.14.0",
     "npm": "11.10.1"
   },
   "devDependencies": {
