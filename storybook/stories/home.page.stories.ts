@@ -15,7 +15,7 @@ export const HomePage: Story = {
             list
         "
 
-        hx-get="/pages/home.page.html"
+        hx-get="/stories/home.page.html"
         hx-trigger="load"
         hx-swap="outerHTML"
     >
