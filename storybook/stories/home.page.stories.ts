@@ -7,18 +7,9 @@ type Story = StoryObj;
 
 export const HomePage: Story = {
   render: () => `
-    <div
-        class="
-            list-item
-
-            group-list
-            list
-        "
-
-        hx-get="/stories/home.page.html"
+    <div hx-get="/stories/pages/home.page.html"
         hx-trigger="load"
-        hx-swap="outerHTML"
-    >
+        hx-swap="outerHTML">
     </div>
   `
 };
