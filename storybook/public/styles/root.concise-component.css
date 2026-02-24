@@ -22,16 +22,57 @@
     --concise-text-heading-6:   17px;
     --concise-text-base:        17px;
 
-    --concise-text-heading-1-line-height:   43px;
-    --concise-text-heading-2-line-height:   41px;
-    --concise-text-heading-3-line-height:   37px;
-    --concise-text-heading-4-line-height:   31px;
-    --concise-text-heading-5-line-height:   29px;
-    --concise-text-heading-6-line-height:   23px;
+    --concise-text-heading-1-line-height:   47px;
+    --concise-text-heading-2-line-height:   43px;
+    --concise-text-heading-3-line-height:   41px;
+    --concise-text-heading-4-line-height:   37px;
+    --concise-text-heading-5-line-height:   31px;
+    --concise-text-heading-6-line-height:   29px;
     --concise-text-line-height:             23px;
+
+
+
+    --concise-text-main-section-title: var(--concise-text-heading-1);
+    --concise-text-main-section-description: var(--concise-text-heading-6);
+    --concise-text-support-section-title: var(--concise-text-heading-2);
+    --concise-text-support-section-description: var(--concise-text-heading-6);
+    --concise-text-specific-section-title: var(--concise-text-heading-3);
+    --concise-text-specific-section-description: var(--concise-text-heading-6);
+
+    --concise-equilateral-ratio: 0.8660254;
+    --concise-base-division: calc(var(--concise-base-unit) / 5);
+    --concise-base-spacing: calc(var(--concise-base-division) / 2);
+
+    --concise-level-1: calc(var(--concise-base-unit) * 1);
+    --concise-level-2: calc(var(--concise-base-unit) * 2);
+    --concise-level-3: calc(var(--concise-base-unit) * 3);
+    --concise-level-4: calc(var(--concise-base-unit) * 4);
+    --concise-level-5: calc(var(--concise-base-unit) * 5);
 
     --concise-list-item-unit: 7;
     --concise-list-item-content-unit: 5;
+
+    --concise-list-height: var(--concise-base-unit);
+    --concise-list-width: calc(
+        var(--concise-base-unit) * var(--concise-list-item-unit)
+    );
+
+    --concise-list-item-height: var(--concise-base-unit);
+    --concise-list-item-width: calc(
+        var(--concise-base-unit) * var(--concise-list-item-unit)
+    );
+
+    --concise-list-item-content-height: var(--concise-list-item-height);
+    --concise-list-item-content-width: calc(
+        var(--concise-base-unit) * var(--concise-list-item-content-unit)
+    );
+
+    --concise-control-height: var(--concise-base-unit);
+    --concise-control-width: calc(
+        var(--concise-base-unit) * var(--concise-list-item-unit)
+    );
+    --concise-icon-control-height: var(--concise-base-unit);
+    --concise-icon-control-width: var(--concise-base-unit);
 
     --concise-color-white-darker:   rgba(139, 127, 109, 1);
     --concise-color-white-dark:     rgba(173, 137, 113, 1);
@@ -86,45 +127,6 @@
     --concise-color-black-base:     rgba(29, 29, 29, 1);
     --concise-color-black-light:    rgba(53, 53, 53, 1);
     --concise-color-black-lighter:  rgba(79, 79, 79, 1);
-
-    --concise-equilateral-ratio: 0.8660254;
-    --concise-base-division: calc(var(--concise-base-unit) / 5);
-    --concise-base-spacing: calc(var(--concise-base-division) / 2);
-
-    --concise-level-1: calc(var(--concise-base-unit) * 1);
-    --concise-level-2: calc(var(--concise-base-unit) * 2);
-    --concise-level-3: calc(var(--concise-base-unit) * 3);
-    --concise-level-4: calc(var(--concise-base-unit) * 4);
-    --concise-level-5: calc(var(--concise-base-unit) * 5);
-
-    --concise-text-main-section-title: var(--concise-text-heading-1);
-    --concise-text-main-section-description: var(--concise-text-heading-6);
-    --concise-text-support-section-title: var(--concise-text-heading-2);
-    --concise-text-support-section-description: var(--concise-text-heading-6);
-    --concise-text-specific-section-title: var(--concise-text-heading-3);
-    --concise-text-specific-section-description: var(--concise-text-heading-6);
-
-    --concise-list-item-height: var(--concise-base-unit);
-    --concise-list-item-width: calc(
-        var(--concise-base-unit) * var(--concise-list-item-unit)
-    );
-
-    --concise-list-item-content-height: var(--concise-list-item-height);
-    --concise-list-item-content-width: calc(
-        var(--concise-base-unit) * var(--concise-list-item-content-unit)
-    );
-
-    --concise-list-height: var(--concise-base-unit);
-    --concise-list-width: calc(
-        var(--concise-base-unit) * var(--concise-list-item-unit)
-    );
-
-    --concise-control-height: var(--concise-base-unit);
-    --concise-control-width: calc(
-        var(--concise-base-unit) * var(--concise-list-item-unit)
-    );
-    --concise-icon-control-height: var(--concise-base-unit);
-    --concise-icon-control-width: var(--concise-base-unit);
 
     --concise-base-background-color: var(--concise-color-black-base);
     --concise-base-text-color: var(--concise-color-white-base);
@@ -188,9 +190,9 @@ body:has(.concise-component),
 .concise-component * {
     color: var(--concise-base-text-color);
     font-family: var(--concise-font-family);
-    font-size: var(--concise-text-base);
     font-variant-ligatures: contextual;
     font-weight: normal;
+    font-size: var(--concise-text-base);
     line-height: var(--concise-text-line-height);
     text-decoration: none;
 
