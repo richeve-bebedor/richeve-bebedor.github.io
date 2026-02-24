@@ -36,6 +36,11 @@
     padding-right: var(--concise-base-spacing);
 }
 
+.concise-component li.content-tree-item img.content {
+    padding-top: var(--concise-base-spacing);
+    padding-bottom: var(--concise-base-spacing);
+}
+
 .concise-component main.content-tree .main-content.content {
     justify-content: center;
 
