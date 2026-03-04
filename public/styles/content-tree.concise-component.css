@@ -1,15 +1,20 @@
-.concise-component main.content-tree.list {
+.concise-component aside.content-tree.list,
+.concise-component main.content-tree.list
+{
     width: var(--concise-list-width);
     min-width: var(--concise-list-width);
     max-width: var(--concise-list-width);
 
-
-    height: 100vh;
-    min-height: 100vh;
-    max-height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: 100dvh;
 }
 
-.concise-component main.content-tree > ol.content-tree-list.list {
+.concise-component aside.content-tree > ul.content-tree-list.list,
+.concise-component main.content-tree > ul.content-tree-list.list
+.concise-component aside.content-tree > ol.content-tree-list.list,
+.concise-component main.content-tree > ol.content-tree-list.list
+{
     width: var(--concise-list-width);
     min-width: var(--concise-list-width);
     max-width: var(--concise-list-width);
@@ -20,7 +25,6 @@
 }
 
 .concise-component li.content-tree-item.item {
-    display: flex;
     flex-direction: row;
 }
 
@@ -29,26 +33,26 @@
     min-width: var(--concise-list-item-content-width);
     max-width: var(--concise-list-item-content-width);
 
-    display: flex;
     flex-direction: column;
 
     padding-left: var(--concise-base-spacing);
     padding-right: var(--concise-base-spacing);
 }
 
-.concise-component li.content-tree-item img.content {
-    padding-top: var(--concise-base-spacing);
-    padding-bottom: var(--concise-base-spacing);
+.concise-component .content-tree .picture.content {
+    padding: 0;
 }
 
-.concise-component main.content-tree .main-content.content {
-    justify-content: center;
-
+.concise-component .content-tree .main-content.content {
     color: var(--concise-main-text-color);
 }
 
-.concise-component main.content-tree .support-content.content {
-    justify-content: center;
-
+.concise-component .content-tree .support-content.content {
     color: var(--concise-support-text-color);
+}
+
+.concise-component .content-tree .focus-content.content {
+    flex-direction: column;
+
+    padding: 0;
 }
